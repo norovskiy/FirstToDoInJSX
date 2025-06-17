@@ -92,7 +92,7 @@ function App() {
 
   let saveEdit = () => {
     setCards(cards.map(card => 
-      card.id === editId ? { ...card, ...formData } : card
+      card.id == editId ? { ...card, ...formData } : card
     ))
     setEditId(null)
   }
